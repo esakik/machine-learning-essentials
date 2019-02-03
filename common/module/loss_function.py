@@ -1,8 +1,18 @@
 import numpy as np
 
+
+def mean_squared_error(y, t):
+    """Calculate mean squared error.
+
+    y: predicted data
+    t: target data
+    """
+    return 0.5 * np.sum((y - t)**2)
+
+
 def cross_entropy_error(y, t):
     """Calculate cross entropy error.
-    
+
     y: predicted data
     t: target data
     """
@@ -13,6 +23,6 @@ def cross_entropy_error(y, t):
     # convert the target data into index of a correct label if the target is one-hot-vector
     if t.size == y.size:
         t = t.argmax(axis=1)
-             
+
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
