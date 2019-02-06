@@ -6,4 +6,4 @@ def standardize(x):
 
     x: input data
     """
-    return (x - np.mean(x)) / np.std(x)
+    return (x - np.mean(x, axis=0)) / np.std(x, axis=0)
