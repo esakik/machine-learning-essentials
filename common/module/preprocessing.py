@@ -11,29 +11,27 @@ def standardize(X):
 
 def decorrelate(X):
     """decorrelate data.
-    
+
     X: input data
     """
     Sigma = np.cov(X, rowvar=0)
     eigenvalue, eigenvector = np.linalg.eig(Sigma)
     S = eigenvector
-    
+
     return np.dot(S.T, X.T).T
 
 
 def whitening(X):
     """whitening data.
-    
+
     X: input data
     """
     X_centerized = X - X.mean(axis=0)
-    
+
     Sigma = np.cov(X, rowvar=0)
-    eigenvalue, eigenvector = np.linalg.eig(Sigma)
-    S = eigenvector
-    
+    _, S = np.linalg.eig(Sigma)
+
     Lambda = np.dot(np.dot(np.linalg.inv(S), Sigma), S)
     Lambda_sqrt_inv = np.linalg.inv(np.sqrt(Lambda))
-    
-    return np.dot(np.dot(X_centerized, S), Lambda_sqrt_inv.T)
 
+    return np.dot(np.dot(X_centerized, S), Lambda_sqrt_inv.T)
