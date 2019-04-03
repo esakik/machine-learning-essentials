@@ -21,7 +21,3 @@ pip install matplotlib
 pip install seaborn
 pip install keras
 ```
-
-## Author
-
-esaki01
