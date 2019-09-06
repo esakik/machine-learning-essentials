@@ -12,12 +12,7 @@ We should not use scikit-learn which is a library for machine learning, except f
 
 ## Prerequisites
 
-Please install the below libraries if not working.
+You can install required libraries with below command.
 ```
-pip install sklearn
-pip install numpy
-pip install pandas
-pip install matplotlib
-pip install seaborn
-pip install keras
+$ make dependencies
 ```
