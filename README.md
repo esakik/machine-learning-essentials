@@ -1,6 +1,8 @@
 # Scratch ML
 This is for understanding "black box" of machine learning. Implement of machine learning from scratch.
 
+I also summarize my study about machine learning on https://scrapbox.io/esaki-ml-note.
+
 ## Details
 
 Implement "numerical optimization problem", e.g. newton's method, gradient descent and lagrange multipliers method, etc. Also we implement "machine learning algorithm", e.g. k-NN, linear regression, neural network, PCA, etc.
