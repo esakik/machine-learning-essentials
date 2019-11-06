@@ -1,7 +1,8 @@
-# Scratch ML
-This is for understanding "black box" of machine learning. Implement of machine learning from scratch.
+# scratch-ml
+>This repository is for understanding "black box" of machine learning.
 
-I also summarize my study about machine learning on https://scrapbox.io/esaki-ml-note.
+## Overview
+Implement of machine learning from scratch. I also summarize my study about machine learning on https://scrapbox.io/esaki-ml-note.
 
 ## Details
 
