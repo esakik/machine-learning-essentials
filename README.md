@@ -1,4 +1,4 @@
-# scratch-ml
+# ml-notebooks
 >This repository is for understanding "black box" of machine learning.
 
 ## Overview
