@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def step(x):
     """Step function.
 
