@@ -14,7 +14,7 @@ matplotlib = "==3.2.*"
 seaborn = "==0.10.*"
 Keras = "==2.3.*"
 termcolor = "==1.1.*"
-tensorflow = "==1.14.*"
+tensorflow = "==1.15.*"
 
 [requires]
 python_version = "3.7"
