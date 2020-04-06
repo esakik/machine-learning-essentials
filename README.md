@@ -16,5 +16,19 @@ Should not use scikit-learn which is a library for machine learning, except for 
 
 You can install required libraries with below command.
 ```
-$ make dependencies
+$ pipenv install
+```
+
+## Getting Started
+
+Need to enter virtual environment.
+
+```bash
+$ pipenv shell
+```
+
+Start Jupyter Notebook.
+
+```bash
+$ jupyter notebook
 ```
